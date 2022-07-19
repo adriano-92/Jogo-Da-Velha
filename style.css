@@ -1,0 +1,169 @@
+body{
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#outter-square{
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  position: relative;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner-square{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background: white;
+  cursor: pointer;
+  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.inner-square:hover{
+  background: rgb(187, 187, 187);
+}
+
+#button-container{
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#x{
+  font-size: 3rem;
+  width: 50px;
+  height: 50px;
+  line-height:20px;
+  cursor: pointer;
+}
+
+#o{
+  font-size: 3rem;
+  width: 50px;
+  height: 50px;
+  line-height:20px;
+  cursor: pointer;
+}
+
+#x:hover, #o:hover{
+  background: rgb(187, 187, 187);
+}
+
+.isActive{
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  margin-left: 49.3%;
+  margin-top: -75.5%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(40, 244, 169);
+}
+
+.isActive2{
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  margin-left: 49.3%;
+  margin-top: -75.5%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(40, 244, 169);
+}
+
+#restart{
+  width: 100px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100px);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  #outter-square{
+    margin-top: 25%;
+  }
+
+  .isActive{
+    margin-left: 49.6%;
+    margin-top: -35.5%;
+  }
+
+  .isActive2{
+    margin-left: 49.6%;
+    margin-top: -37%;
+  }
+
+  #button-container{
+    top: 440px;
+    left: 400px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #outter-square{
+    margin-top: 60%;
+  }
+
+  .isActive{
+    margin-left: 49.6%;
+    margin-top: -110.5%;
+  }
+
+  .isActive2{
+    margin-left: 49.6%;
+    margin-top: -110.5%;
+  }
+
+  #button-container{
+    width: 200px;
+    top: 460px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #restart{
+    font-weight: 700;
+    left: 50%;
+    top: 700px;
+    transform: translate(-50%, -100px);
+    cursor: pointer;
+  }
+
+  #x{
+    font-size: 5rem;
+    width: 80px;
+    height: 80px;
+ 
+  }
+  
+  #o{
+    font-size: 5rem;
+    width: 80px;
+    height: 80px;
+  }
+}
